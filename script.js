@@ -1,6 +1,7 @@
 const inputBox = document.querySelector("#input-box");
 const listContainer = document.querySelector("#list-container");
 
+
 function addTask(){
     if(inputBox.value === ''){
         alert("You must write something first!");
@@ -27,6 +28,10 @@ listContainer.addEventListener("click", function(e){
     }
 });
 
+function resetList(){
+   localStorage.removeItem("data");
+   showTask();
+}
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
@@ -35,4 +40,4 @@ function saveData(){
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
-showTask()
+showTask();

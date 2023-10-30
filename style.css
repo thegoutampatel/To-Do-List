@@ -100,3 +100,14 @@ ul li span{
 ul li span:hover{
     background: #eddef0;
 }
+#reset{
+    border: none;
+    outline: none;
+    margin-left: 250px;
+    padding: 8px 15px;
+    background: #153677;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 40px;
+}
